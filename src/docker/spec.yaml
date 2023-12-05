@@ -1,0 +1,19 @@
+spec:
+  containers:
+    - name: streamlit
+      image: <acct>.registry.snowflakecomputing.com/test_db/public/images/streamlit_test
+      env:
+        SNOWFLAKE_WAREHOUSE: compute_wh
+        SNOWFLAKE_MOUNTED_STAGE_PATH: /stage
+      volumeMounts:
+        - name: stage
+          mountPath: /stage 
+  endpoints:
+    - name: streamlit
+      port: 8501
+      public: true
+  volume:
+    - name: stage
+      source: "@llm_workspace"
+      uid: 1000
+      gid: 1000
