@@ -4,7 +4,7 @@ spec:
       image: <acct>.registry.snowflakecomputing.com/test_db/public/images/streamlit_test
       env:
         SNOWFLAKE_WAREHOUSE: compute_wh
-        SNOWFLAKE_MOUNTED_STAGE_PATH: /stage
+        SNOWFLAKE_MOUNTED_STAGE_PATH: "stage"
       volumeMounts:
         - name: stage
           mountPath: /stage 
