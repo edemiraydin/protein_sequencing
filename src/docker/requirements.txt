@@ -1,0 +1,5 @@
+python-dotenv
+py3Dmol
+stmol==0.0.7
+streamlit
+snowflake-snowpark-python[pandas]
