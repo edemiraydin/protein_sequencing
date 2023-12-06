@@ -20,5 +20,8 @@ This demo shows how we can use OSS Streamlit to deploy data apps in SPCS.
 
    Get the endpoint URL from DESCRIBE .. output, launch the Streamlit app.
 
+   <img width="1344" alt="image" src="https://github.com/edemiraydin/protein_sequencing/assets/10012908/fb46fdbf-499c-4d87-a79a-d3c127ddcb1c">
+
+
 
    
