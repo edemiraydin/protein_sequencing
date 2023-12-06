@@ -27,7 +27,7 @@ upid = df[df["ID"] == protein]["DESCRIPTION"].values[0].split("|")[1]
 st.sidebar.write(desc)
 style = st.sidebar.selectbox('style',['line','cross','stick','sphere','cartoon','clicksphere'])
 spin = st.sidebar.checkbox('Spin', value = False)
-filename="stage/"+ str(protein) +".pdb"
+filename="llm-workspace/"+ str(protein) +".pdb"
 # Loading the predicted structure saved in PDB file
 with open(filename) as ifile:
     system = "".join([x for x in ifile])
