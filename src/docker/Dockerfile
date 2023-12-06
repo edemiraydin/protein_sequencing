@@ -5,9 +5,9 @@ ADD ./requirements.txt /app/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ADD ./ /app
+COPY streamlit_app.py .
+COPY utils.py .
 
 EXPOSE 8501
 
-ENV STREAMLIT_GLOBAL_DISABLE_WATCHDOG_WARNING=1
 CMD ["streamlit", "run", "streamlit_app.py"]
