@@ -1,5 +1,7 @@
 # Protein Sequencing Demo for Drug Discovery
 
+This demo shows how we can use OSS Streamlit to deploy data apps in SPCS.
+
 1. Create a Snowflake table (TEST_DB.PUBLIC.PROTEIN) with the sample data in /data/testdata.csv
 2. Run /src/setup.sql
 3. Upload /data/*.pdb files to @llm_workspace stage.
