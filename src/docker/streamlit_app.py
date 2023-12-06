@@ -9,7 +9,7 @@ import requests
 @st.cache_data
 def load_data():
     session = create_session_object()
-    df = session.table("bionemo_db.public.protein")
+    df = session.table("test_db.public.protein")
     return df.to_pandas()
 
 df = load_data()
