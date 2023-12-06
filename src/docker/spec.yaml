@@ -7,7 +7,7 @@ spec:
         SNOWFLAKE_MOUNTED_STAGE_PATH: "stage"
       volumeMounts:
         - name: stage
-          mountPath: /stage 
+          mountPath: /workspace/stage
   endpoints:
     - name: streamlit
       port: 8501
