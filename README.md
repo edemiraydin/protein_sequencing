@@ -12,7 +12,11 @@ This demo shows how we can use OSS Streamlit to deploy data apps in SPCS.
 
    docker tag streamlit_test <acct>.registry.snowflakecomputing.com/test_db/public/images/streamlit_test
    docker push <acct>.registry.snowflakecomputing.com/test_db/public/images/streamlit_test
-6. Run /src/create_service.sql
+6. Push spec.yaml into @yaml_stage using SnowSQL.
+
+   use database TEST_DB;
+   put file:///../docker/spec.yaml @yaml_stage overwrite=true auto_compress=false;
+8. Run /src/create_service.sql
 
    Get the endpoint URL from DESCRIBE .. output, launch the Streamlit app.
 
