@@ -2,17 +2,17 @@ spec:
   containers:
     - name: streamlit
       image: <acct>.registry.snowflakecomputing.com/test_db/public/images/streamlit_test
-      env:
+       env:
         SNOWFLAKE_WAREHOUSE: compute_wh
       volumeMounts:
-      - name: llm-workspace
-        mountPath: /app/llm-workspace
+      - name: my-workspace
+        mountPath: /app/my-workspace
   endpoints:
     - name: streamlit
       port: 8501
       public: true
   volumes:
-  - name: llm-workspace
+  - name: my-workspace
     source: "@llm_workspace"
     uid: 1000
     gid: 1000
