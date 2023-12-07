@@ -2,6 +2,9 @@
 USE DATABASE TEST_DB;
 USE WAREHOUSE COMPUTE_WH;
 
+-- make sure images are pushed into the image repo
+call system$registry_list_images('/test_db/public/images');
+
 --DROP SERVICE streamlit;
 CREATE SERVICE streamlit
   MIN_INSTANCES = 1
