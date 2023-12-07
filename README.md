@@ -18,7 +18,9 @@ This demo shows how we can use OSS Streamlit to deploy data apps in SPCS.
    put file:///../docker/spec.yaml @yaml_stage overwrite=true auto_compress=false;
 8. Run /src/create_service.sql
 
-   Get the endpoint URL from DESCRIBE .. output, launch the Streamlit app.
+   Get the endpoint URL from the
+   DESCRIBE SERVICE STREAMLIT;
+    output, launch the Streamlit app.
 
    <img width="1344" alt="image" src="https://github.com/edemiraydin/protein_sequencing/assets/10012908/fb46fdbf-499c-4d87-a79a-d3c127ddcb1c">
 
